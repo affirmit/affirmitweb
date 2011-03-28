@@ -22,24 +22,24 @@ h1{width:223px; height:172px; margin:20px 0 0 0; padding:0 110px; float:right; l
 #leftPanel .about .date .left{width:139px; height:29px; margin:0px; padding:0 0 0 35px; float:left; font-family:Arial; font-size:11px; color:#bb9d59; line-height:30px; font-weight:bold; background:url(images/cal.jpg) no-repeat 11px 0}
 #leftPanel .about .date .right{width:65px; height:29px; margin:0px; padding:0 0 0 38px; float:left; background:url(images/read.jpg) no-repeat 12px 0}
 #leftPanel .about .date .right a{font-family:Arial; font-size:11px; color:#943415; line-height:30px; font-weight:bold; text-decoration:none}
-#leftPanel .services{width:604px; margin:34px 0 0 0; padding:0px; float:left}
-#leftPanel .services h2{width:604px; margin:0px; padding:0px; float:left; font-family:Georgia; font-size:24px; color:#2c787b; line-height:28px; font-weight:normal}
-#leftPanel .services .pic{width:163px; height:202px; margin:15px 0 0 0; padding:0 0 0 28px; float:left; background:url(images/pic1.jpg) no-repeat}
-#leftPanel .services .pic a{font-family:Arial; font-size:10px; color:#943415; line-height:14px; margin:146px 0 0 0; padding:0px; float:left; width:123px}
-#leftPanel .services p{width:390px; margin:14px 0 0 0; padding:0 0 0 20px; float:left; font-family:Arial; font-size:12px; color:#bb9d59; line-height:16px}
-#leftPanel .services p span{font-weight:bold}
-#leftPanel .services h3{width:390px; margin:13px 0 0 0; padding:0 0 0 20px; float:left; font-family:Georgia; font-size:18px; color:#5c4527; line-height:22px; font-weight:normal}
-#leftPanel .services ul{width:390px; margin:5px 0 0 0; padding:0 0 0 20px; float:left; display:block}
-#leftPanel .services ul li{width:390px; margin:0px; padding:0px; float:left; display:block}
-#leftPanel .services ul li span{width:372px; margin:0px; padding:0 0 0 18px; float:left; font-family:Arial; font-size:11px; color:#943415; line-height:16px; font-weight:bold; text-decoration:none; border-bottom:#d8cd2f dashed 1px; background:url(images/listStyle.jpg) no-repeat 2px 6px}
-#leftPanel .services ul li span.bottom{width:372px; height:22px; margin:0px; padding:0 0 0 18px; float:left; font-family:Arial; font-size:11px; color:#943415; line-height:px; text-decoration:none; border-bottom:0px; background:url(images/listStyle.jpg) no-repeat 2px 6px}
-#leftPanel .testimonial{width:590px; margin:0px; padding:0px; float:left}
-#leftPanel .testimonial h2{width:590px; margin:30px 0 0 0; padding:0px; float:left; font-family:Georgia; font-size:24px; color:#2c787b; line-height:28px; font-weight:normal}
-#leftPanel .testimonial p{width:590px; margin:13px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:12px; color:#bb9d59; line-height:16px; text-indent:12px; background:url(images/quo.jpg) no-repeat}
-#leftPanel .testimonial p span{font-weight:bold}
+#rightPanel .services{width:262px; margin:34px 0 40px 0; padding:0px; float:left}
+#rightPanel .services h2{width:262px; margin:0px; padding:0px; float:left; font-family:Georgia; font-size:24px; color:#2c787b; line-height:28px; font-weight:normal}
+#rightPanel .services .pic{width:67px; height:71px; margin:15px 0 0 0; padding:0 0 0 28px; float:left; background:url(images/pic1.jpg) no-repeat}
+#rightPanel .services .pic a{font-family:Arial; font-size:10px; color:#943415; line-height:14px; margin:146px 0 0 0; padding:0px; float:left; width:123px}
+#rightPanel .services p{width:195px; float:left; font-family:Arial; font-size:12px; color:#bb9d59; line-height:16px}
+#rightPanel .services p span{font-weight:bold}
+#rightPanel .services h3{width:262px; margin:13px 0 0 0; padding:0 0 0 20px; float:left; font-family:Georgia; font-size:18px; color:#5c4527; line-height:22px; font-weight:normal}
+#rightPanel .services ul{width:262px; margin:5px 0 0 0; padding:0 0 0 20px; float:left; display:block}
+#rightPanel .services ul li{width:262px; margin:0px; padding:0px; float:left; display:block}
+#rightPanel .services ul li span{width:262px; margin:0px; padding:0 0 0 18px; float:left; font-family:Arial; font-size:11px; color:#943415; line-height:16px; font-weight:bold; text-decoration:none; border-bottom:#d8cd2f dashed 1px; background:url(images/listStyle.jpg) no-repeat 2px 6px}
+#rightPanel .services ul li span.bottom{width:262px; height:22px; margin:0px; padding:0 0 0 18px; float:left; font-family:Arial; font-size:11px; color:#943415; line-height:px; text-decoration:none; border-bottom:0px; background:url(images/listStyle.jpg) no-repeat 2px 6px}
+#rightPanel .testimonial{width:262px; margin:0px; padding:0px; float:left}
+#rightPanel .testimonial h2{width:262px; margin:0px 0 0 0; padding:0px; float:left; font-family:Georgia; font-size:24px; color:#2c787b; line-height:28px; font-weight:normal}
+#rightPanel .testimonial p{width:262px; margin:13px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:12px; color:#bb9d59; line-height:16px; text-indent:12px; background:url(images/quo.jpg) no-repeat}
+#rightPanel .testimonial p span{font-weight:bold}
 /*#leftPanel .testimonial p .dqo{width:11px; height:9px; text-indent:-9999px; background:url(images/quo.jpg) no-repeat}*/
-#leftPanel .testimonial h3{height:17px; margin:6px 0 0 0; padding:0 0 12px 28px; float:left; font-family:Arial; font-size:11px; color:#943415; font-weight:bold; background:url(images/testimIco.jpg) no-repeat}
-#leftPanel .testimonial h3 span{font-weight:normal}
+#rightPanel .testimonial h3{height:17px; margin:6px 0 0 0; padding:0 0 12px 28px; float:left; font-family:Arial; font-size:11px; color:#943415; font-weight:bold; background:url(images/testimIco.jpg) no-repeat}
+#rightPanel .testimonial h3 span{font-weight:normal}
 #rightPanel{width:266px; margin:40px 0 0 0; padding:0 0 74px 36px; float:left; background:url(images/rigthBg.jpg) no-repeat}
 #rightPanel  h2{width:262px;  margin:0px; padding:0px; float:left; font-family:Georgia; font-size:24px; color:#0b636b; line-height:28px; font-weight:normal}
 #rightPanel .view{width:58px; margin:3px 2px 0 0; padding:0 0 0 15px; float:right; font-family:Arial; font-size:11px; color:#943415; font-weight:bold; text-decoration:none; background:url(images/listStyle.jpg) no-repeat 0 4px}
@@ -85,3 +85,6 @@ h1{width:223px; height:172px; margin:20px 0 0 0; padding:0 110px; float:right; l
 #menu ul li .blank{width:1px; height:18px; margin:0px; padding:0 5px 0 5px; float:left; background:url(images/mBlank.jpg) no-repeat center top}
 iframe,#content {margin-left: 130px; margin-top: 30px;}
 #content {width: 650px;}
+pre {color: #943415; float: left; font-size: 11px;}
+#mainWrap div#mainPanel div#content p  { float:left; font-family:Arial; font-size:12px; color:#bb9d59; line-height:16px}
+html body div#mainWrap div#mainPanel div#content h2#about_us {padding-top: 60px; float: left;}
