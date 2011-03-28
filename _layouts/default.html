@@ -38,30 +38,87 @@
   </ul>
  </div>
  </div>
-  <div id="logoWrap"><h1>solitude</h1></div>
- <div id="quots"><p>"insecure, low-confidence, low-self-esteem code results in tentative systems that are not capable of the kind of robust operation we need..."</p></div>
+  <div id="logoWrap"><h1>AffirmIt</h1></div>
+ <div id="quots"><p>"...insecure, low-confidence, low-self-esteem code results in tentative systems that are not capable of the kind of robust operation we need..."</p></div>
  <div id="leftPanel">
   <div class="about">
-   <h2></h2>
-   <h3>AffirmIt! is the supportive testing framework...</h3>
-   <p><span>Studies across the globe have confirmed that the archaic practice of having testing systems that dampen enthusiasm and break spirits are not only damaging to young minds, but are impactful on GDP. Enter <em>AffirmIt!</em>. The only testing framework that always uplifts the sprit and makes you feel good about your code. Out with the failing tests of yesteryear's frameworks, in with the group hugs of AffirmIt!</p>
+   <h2>What is AffirmIt?</h2>
+   <h3>AffirmIt! is the supportive testing framework for Ruby.</h3>
+   <p>Studies across the globe have confirmed that the archaic practice of using testing frameworks that dampen enthusiasm and break spirits are not only damaging to young minds, but are impactful on GDP. Enter <em>AffirmIt!</em> -- the only behavioral evaluation framework that always uplifts the spirit and makes you feel good about your code. Out with the failing tests of yesteryear's frameworks, in with the group hugs of AffirmIt!</p>
+   <h2>Getting AffirmIt!</h2>
+   <p>To get AffirmIt!, just install the gem:</p>
+   <pre>gem install affirmit</pre>
+   <h2>Using AffirmIt</h2>
+   <p>In AffirmIt!, we tolerate all code, whether it exhibits behavioral challenges or not.  Of course, we never use the words "test" or "failure", which would imply a value judgment, or "assertions," which would imply an absolute truth.  Instead, we tread softly around our code (in fluffy bunny slippers) and espouse preferences, deferring success if necessary until that joyous moment when all our affirmations can be cherished in fullness.</p>
+   <p>In order to use AffirmIt!, just write a class that extends <code>AffirmIt::Affirmation</code>, with methods that begin with <code>affirm_</code>.  For example:
+   <pre>
+require 'affirmit'
+
+class Dead &lt; Exception; end
+
+class Unicorn
+  attr_reader :life_force, :locations
+
+  def initialize
+    @life_force = 10
+    @locations = []
+  end
+
+  def is_dead?
+    @life_force &lt;= 0
+  end
+
+  def prance location
+    @locations &lt;&lt; location
+    @life_force -= 3
+    raise Dead if @life_force &lt; 0 # return Zombie.new
+  end
+end
+
+class UnicornAffirmation &lt; AffirmIt::Affirmation
+  def build_up
+    @unicorn = Unicorn.new
+  end
+
+  def affirm_life_force
+    prefer_that @unicorn.life_force, is(10)
+  end
+
+  def affirm_prance_adds_location
+    prefer_that @unicorn.locations.empty?
+    @unicorn.prance :fields
+    @unicorn.prance :flowery_meadows
+    prefer_that @unicorn.locations, (includes :fields) &amp; (includes :flowery_meadows)
+  end
+
+  def affirm_prance_too_much_can_be_fatal
+    3.times { @unicorn.prance :fields }
+    prefer_that @unicorn.life_force, greater_than(0)
+    expect_raise Dead do
+      @unicorn.prance :killing_fields
+    end
+    maybe @unicorn.is_dead?
+  end
+end
+   </pre>
+   <p>For more examples, and to help us continue to develop the future of software behavioral evaluation, check out our <a href="https://github.com/affirmit/affirmit">development site.</a></p>
   </div>
   <div class="services">
-   <h2>Quotes about the need for supportive frameworks</h2>
+   <h2>Our philosophy</h2>
    <div class="pic"><a href="#"></a></div>
-   <h3>Quotes from Dr. Sue Donim</h3>
+   <p>We agree with the philosophy of Dr. Sue Donim.  Some of the quotes from her seminal paper, <em>Revolutionizing Code Affirmation in Our Relativistic World</em>, are shown below.</p>
    <ul>
-    <li><span href="#">"...span study done in 2010, span gedanken experiment, revealed that the number one issue facing software developers and software itself is self-esteem [footnote: 80% of statistics are made up.]..."</span></li>
+    <li><span href="#">"...a study done in 2010, a gedanken experiment, revealed that the number one issue facing software developers and software itself is self-esteem [footnote: 80% of statistics are made up.]..."</span></li>
     <li><span href="#">"insecure, low-confidence, low-self-esteem code results in tentative systems that are not capable of the kind of robust operation we need..."</span></li>
     <li><span href="#">"We need systems that have the creative confidence to take the bold, innovative steps we need them to take; to instill confidence in end users. If this approach is extended from back to front, end users will feel good about the softer outcomes of their inept..."</span></li>
     <li><span href="#">"...countless generations of incompetent people have shown us that you don't actually need success to feel successful..."</span></li>
-    <li><span href="#" class="bottom">"...in span world where perception is reality, what we need most is our people and our users to feel successful..."</span></li>
+    <li><span href="#" class="bottom">"...in a world where perception is reality, what we need most is our people and our users to feel successful..."</span></li>
    </ul>
   </div>
   <div class="testimonial">
    <h2>Testimonial</h2>
-   <p> <span>AffirmIt! has changed my life!</span> Ihave struggled for so long in the software development field. I was always sprinting towards failure and no matter how hard I tried, I always felt like a failure. AffirmIt! with their group hugs have made me feel so much better!</p>
-   <h3><span>by</span> Ihave L. O. Selfesteem</h3>
+   <p> <span>AffirmIt! has changed my life!</span> I have struggled for so long in the software development field. I was always sprinting towards failure and no matter how hard I tried, I always felt like a failure. AffirmIt! with their group hugs have made me feel so much better!</p>
+   <h3><span>by</span> Lois Elfesteem</h3>
     <p><span>AffirmIt! helped me to feel that I'm good enough, I'm smart enough, and doggonit, people like me! </span> I used to develop software using those bad frameworks and every night when I'd come home from the office, I'd be laying there alone.. all those tapes rolling: "I'm a fraud.. tomorrow, I'm going to be exposed for what I am, a big imposter.. I just want to curl up and lay in bed all day and eat Fig Newtons." That's just <b>stinking thinking.</b> AffirmIt has helped me to know that ... "I'm good enough, I'm smart enough, and doggonit, people like me!" </p>
    <h3><span>by</span> Stuart Smalley</h3>
   </div>
@@ -70,11 +127,11 @@
   <div class="project">
    <h2>Links</h2>
    <ul>
+    <li><a target="_blank" href="http://menmedia.co.uk/manchestereveningnews/news/education/s/166/166470_exam_failure_equals_deferred_success.html">Deferred Success - Removing "failure"...</a></li>
     <li><a target="_blank" href="http://www.zimbio.com/Parenting+Resources,+Child+Development+and+More/articles/1PG6x-44KLU/Grades+Making+Children+Less+Self+Motivated">Losing motivation when graded</a></li>
     <li><a href="#">Feel good software - the future..</a></li>
     <li><a href="#">Testing...a dirty word</a></li>
     <li><a href="#">Watson - hugging Alex Trebek</a></li>
-    <li><a target="_blank" href="http://menmedia.co.uk/manchestereveningnews/news/education/s/166/166470_exam_failure_equals_deferred_success.html">Deferred Success - Removing "failure"...</a></li>
     <li><a href="#">Deep Blue - a triumph of affirmation!</a></li>
     <li><a href="#" class="bottom">Visualize GROUP HUGS!</a></li>
    </ul>
