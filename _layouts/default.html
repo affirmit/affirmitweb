@@ -46,14 +46,13 @@
    <h3>AffirmIt! is the supportive testing framework for Ruby.</h3>
    <p>Studies across the globe have confirmed that the archaic practice of using testing frameworks that dampen enthusiasm and break spirits are not only damaging to young minds, but are impactful on GDP. Enter <em>AffirmIt!</em> -- the only behavioral evaluation framework that always uplifts the spirit and makes you feel good about your code. Out with the failing tests of yesteryear's frameworks, in with the group hugs of AffirmIt!</p>
    <h2>Getting AffirmIt!</h2>
-   <p>To get AffirmIt!, just install the gem:</p>
+   <p>To get AffirmIt!, make sure you have <a href="http://rubygems.org/">RubyGems</a> installed, then install the AffirmIt! gem:</p>
    <pre>gem install affirmit</pre>
-   <h2>Using AffirmIt</h2>
+   <p>If you'd rather check out the source code and build it for yourself, feel free to visit our <a href="https://github.com/affirmit/affirmit">Github project page</a>.
+   <h2>Using AffirmIt!</h2>
    <p>In AffirmIt!, we tolerate all code, whether it exhibits behavioral challenges or not.  Of course, we never use the words "test" or "failure", which would imply a value judgment, or "assertions," which would imply an absolute truth.  Instead, we tread softly around our code (in fluffy bunny slippers) and espouse preferences, deferring success if necessary until that joyous moment when all our affirmations can be cherished in fullness.</p>
-   <p>In order to use AffirmIt!, just write a class that extends <code>AffirmIt::Affirmation</code>, with methods that begin with <code>affirm_</code>.  For example:
+   <p>For example, let's say you wish to affirm the following code.</p>
    <pre>
-require 'affirmit'
-
 class Dead &lt; Exception; end
 
 class Unicorn
@@ -74,6 +73,10 @@ class Unicorn
     raise Dead if @life_force &lt; 0 # return Zombie.new
   end
 end
+</pre>
+   <p>To affirm your <code>Unicorn</code>, just write a class that extends <code>AffirmIt::Affirmation</code>, with methods that begin with <code>affirm_</code> and contain preferences using the method <code>prefer_that</code>.  Here's a simple example:</p>
+   <pre>
+require 'affirmit'
 
 class UnicornAffirmation &lt; AffirmIt::Affirmation
   def build_up
@@ -100,28 +103,46 @@ class UnicornAffirmation &lt; AffirmIt::Affirmation
     maybe @unicorn.is_dead?
   end
 end
+</pre>
+   <p>In order to embrace this affirmation, simply run the file:
+   <pre>ruby unicorn.rb</pre>
+   <p>You'll see some output like this:</p>
+   <pre>
+Starting group hug unicorn.rb
+...
+There were:
+  - 3 affirmations (3 cherished)
+  - 4 preferences
+  - 0 differing opinions
+  - 0 elective success deferrals
+  - 0 behavioral challenges
+  - 0 issues
+  - 1 bonus points
+
+You got 5 out of 5 gold stars!  Great job!
    </pre>
+   <p>This may look similar to some of those <em>other</em> testing frameworks, but we give you gold stars!</p>
    <p>For more examples, and to help us continue to develop the future of software behavioral evaluation, check out our <a href="https://github.com/affirmit/affirmit">development site.</a></p>
   </div>
  </div>
  <div id="rightPanel">
   <div class="testimonial">
-   <h2>Testimonial</h2>
+   <h2>Testimonials</h2>
    <p> <span>AffirmIt! has changed my life!</span> I have struggled for so long in the software development field. I was always sprinting towards failure and no matter how hard I tried, I always felt like a failure. AffirmIt! with their group hugs have made me feel so much better!</p>
-   <h3><span>by</span> Lois Elfesteem</h3>
+   <h3><span>by</span> Lois Elphisteam</h3>
     <p><span>AffirmIt! helped me to feel that I'm good enough, I'm smart enough, and doggonit, people like me! </span> I used to develop software using those bad frameworks and every night when I'd come home from the office, I'd be laying there alone.. all those tapes rolling: "I'm a fraud.. tomorrow, I'm going to be exposed for what I am, a big imposter.. I just want to curl up and lay in bed all day and eat Fig Newtons." That's just <b>stinking thinking.</b> AffirmIt has helped me to know that ... "I'm good enough, I'm smart enough, and doggonit, people like me!" </p>
    <h3><span>by</span> Stuart Smalley</h3>
   </div>
   <div class="services">
-   <h2>Our philosophy</h2>
+   <h2>Philosophy</h2>
    <div class="pic">&nbsp;</div>
-   <p>We agree with the philosophy of Dr. Sue Donim.  Some of the quotes from her seminal paper, <em>Revolutionizing Code Affirmation in Our Relativistic World</em>, are shown below.</p>
+   <p>We adhere to the philosophy of Dr. Sue Donim.  Some key quotes from her seminal paper, <em>Revolutionizing Code Affirmation in Our Relativistic World</em>, are shown below.</p>
    <ul>
-    <li><span href="#">"...a study done in 2010, a gedanken experiment, revealed that the number one issue facing software developers and software itself is self-esteem [footnote: 80% of statistics are made up.]..."</span></li>
-    <li><span href="#">"insecure, low-confidence, low-self-esteem code results in tentative systems that are not capable of the kind of robust operation we need..."</span></li>
-    <li><span href="#">"We need systems that have the creative confidence to take the bold, innovative steps we need them to take; to instill confidence in end users. If this approach is extended from back to front, end users will feel good about the softer outcomes of their inept..."</span></li>
-    <li><span href="#">"...countless generations of incompetent people have shown us that you don't actually need success to feel successful..."</span></li>
-    <li><span href="#" class="bottom">"...in a world where perception is reality, what we need most is our people and our users to feel successful..."</span></li>
+    <li><span>"...a study done in 2010, a gedanken experiment, revealed that the number one issue facing software developers and software itself is self-esteem [footnote: 80% of statistics are made up.]..."</span></li>
+    <li><span>"insecure, low-confidence, low-self-esteem code results in tentative systems that are not capable of the kind of robust operation we need..."</span></li>
+    <li><span>"We need systems that have the creative confidence to take the bold, innovative steps we need them to take; to instill confidence in end users. If this approach is extended from back to front, end users will feel good about the softer outcomes of their inept..."</span></li>
+    <li><span>"...countless generations of incompetent people have shown us that you don't actually need success to feel successful..."</span></li>
+    <li><span class="bottom">"...in a world where perception is reality, what we need most is our people and our users to feel successful..."</span></li>
    </ul>
   </div>
   <div class="project">

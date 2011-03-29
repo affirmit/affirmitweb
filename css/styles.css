@@ -14,7 +14,7 @@ h1{width:223px; height:172px; margin:20px 0 0 0; padding:0 110px; float:right; l
 #quots p{margin:0px; font-family:Georgia; font-size:28px; color:#497f35; line-height:32px; text-align:center; text-indent:50px}
 #leftPanel{width:637px; margin:27px 0 0 0; padding:0 0 0 35px; float:left}
 #leftPanel .about{width:604px; margin:0px; padding:0px; float:left}
-#leftPanel .about h2{width:604px; margin:0px; padding:0px; float:left; font-family:Georgia; font-size:30px; color:#0b636b; line-height:34px; font-weight:normal}
+#leftPanel .about h2{width:604px; margin:20px 0 0 0; padding:0px; float:left; font-family:Georgia; font-size:30px; color:#0b636b; line-height:34px; font-weight:normal}
 #leftPanel .about h3{width:604px; margin:4px 0 0 0; padding:0px; float:left; font-family:Georgia; font-size:18px; color:#943415; line-height:32px; font-weight:normal}
 #leftPanel .about p{width:590px; margin:3px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:12px; color:#bb9d59; line-height:16px}
 #leftPanel .about p span{font-weight:bold}
