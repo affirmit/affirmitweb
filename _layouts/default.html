@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>AffirmIt!</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/syntax.css" rel="stylesheet" type="text/css" />
 <link rel="icon" href="images/icon.ico" /> 
 <script type="text/javascript" src="css/iepngfix_tilebg.js"></script> 
 <script type="text/javascript" src="css/iepngfix.js"></script> 
@@ -52,8 +53,8 @@
    <h2>Using AffirmIt!</h2>
    <p>In AffirmIt!, we tolerate all code, whether it exhibits behavioral challenges or not.  Of course, we never use the words "test" or "failure", which would imply a value judgment, or "assertions," which would imply an absolute truth.  Instead, we tread softly around our code (in fluffy bunny slippers) and espouse preferences, deferring success if necessary until that joyous moment when all our affirmations can be cherished in fullness.</p>
    <p>For example, let's say you wish to affirm the following code.</p>
-   <pre>
-class Dead &lt; Exception; end
+{% highlight ruby %}
+class Dead < Exception; end
 
 class Unicorn
   attr_reader :life_force, :locations
@@ -64,21 +65,21 @@ class Unicorn
   end
 
   def is_dead?
-    @life_force &lt;= 0
+    @life_force <= 0
   end
 
   def prance location
-    @locations &lt;&lt; location
+    @locations << location
     @life_force -= 3
-    raise Dead if @life_force &lt; 0 # return Zombie.new
+    raise Dead if @life_force < 0 # return Zombie.new
   end
 end
-</pre>
+{% endhighlight %}
    <p>To affirm your <code>Unicorn</code>, just write a class that extends <code>AffirmIt::Affirmation</code>, with methods that begin with <code>affirm_</code> and contain preferences using the method <code>prefer_that</code>.  Here's a simple example:</p>
-   <pre>
+{% highlight ruby %}
 require 'affirmit'
 
-class UnicornAffirmation &lt; AffirmIt::Affirmation
+class UnicornAffirmation < AffirmIt::Affirmation
   def build_up
     @unicorn = Unicorn.new
   end
@@ -103,6 +104,7 @@ class UnicornAffirmation &lt; AffirmIt::Affirmation
     maybe @unicorn.is_dead?
   end
 end
+{% endhighlight %}
 </pre>
    <p>In order to embrace this affirmation, simply run the file:
    <pre>ruby unicorn.rb</pre>
