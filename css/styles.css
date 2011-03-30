@@ -18,6 +18,7 @@ h1{width:223px; height:172px; margin:20px 0 0 0; padding:0 110px; float:right; l
 #leftPanel .about h3{width:604px; margin:4px 0 0 0; padding:0px; float:left; font-family:Georgia; font-size:18px; color:#943415; line-height:32px; font-weight:normal}
 #leftPanel .about p{width:590px; margin:3px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:12px; color:#bb9d59; line-height:16px}
 #leftPanel .about p span{font-weight:bold}
+#leftPanel .about ul{width:590px; margin:3px 0 0 0; padding:0px; float:left; font-family:Arial; font-size:12px; color:#bb9d59; line-height:16px}
 #leftPanel .about .date{width:600px; height:29px; margin:30px 0 0 0; padding:0px; float:left; background:#f9f6d4}
 #leftPanel .about .date .left{width:139px; height:29px; margin:0px; padding:0 0 0 35px; float:left; font-family:Arial; font-size:11px; color:#bb9d59; line-height:30px; font-weight:bold; background:url(images/cal.jpg) no-repeat 11px 0}
 #leftPanel .about .date .right{width:65px; height:29px; margin:0px; padding:0 0 0 38px; float:left; background:url(images/read.jpg) no-repeat 12px 0}
@@ -29,9 +30,9 @@ h1{width:223px; height:172px; margin:20px 0 0 0; padding:0 110px; float:right; l
 #rightPanel .services p{width:195px; float:left; font-family:Arial; font-size:12px; color:#bb9d59; line-height:16px}
 #rightPanel .services p span{font-weight:bold}
 #rightPanel .services h3{width:262px; margin:13px 0 0 0; padding:0 0 0 20px; float:left; font-family:Georgia; font-size:18px; color:#5c4527; line-height:22px; font-weight:normal}
-#rightPanel .services ul{width:262px; margin:5px 0 0 0; padding:0 0 0 20px; float:left; display:block}
+#rightPanel .services ul{width:262px; margin:5px 0 0 0; padding:0 0 0 7px; float:left; display:block}
 #rightPanel .services ul li{width:262px; margin:0px; padding:0px; float:left; display:block}
-#rightPanel .services ul li span{width:262px; margin:0px; padding:0 0 0 18px; float:left; font-family:Arial; font-size:11px; color:#943415; line-height:16px; font-weight:bold; text-decoration:none; border-bottom:#d8cd2f dashed 1px; background:url(images/listStyle.jpg) no-repeat 2px 6px}
+#rightPanel .services ul li span{width:262px; margin:0px; padding:0 0 0 18px; float:left; font-family:Arial; font-size:11px; color:#943415; line-height:16px; text-decoration:none; border-bottom:#d8cd2f dashed 1px; background:url(images/listStyle.jpg) no-repeat 2px 6px}
 #rightPanel .services ul li span.bottom{width:262px; height:22px; margin:0px; padding:0 0 0 18px; float:left; font-family:Arial; font-size:11px; color:#943415; line-height:px; text-decoration:none; border-bottom:0px; background:url(images/listStyle.jpg) no-repeat 2px 6px}
 #rightPanel .testimonial{width:262px; margin:0px; padding:0px; float:left}
 #rightPanel .testimonial h2{width:262px; margin:0px 0 0 0; padding:0px; float:left; font-family:Georgia; font-size:24px; color:#2c787b; line-height:28px; font-weight:normal}
@@ -88,3 +89,7 @@ iframe,#content {margin-left: 130px; margin-top: 30px;}
 pre {color: #943415; float: left; font-size: 11px;}
 #mainWrap div#mainPanel div#content p  { float:left; font-family:Arial; font-size:12px; color:#bb9d59; line-height:16px}
 html body div#mainWrap div#mainPanel div#content h2#about_us {padding-top: 60px; float: left;}
+#leftPanel .about ul li span.bullet {margin:0px; padding:0 0 0 18px; float:left; font-family:Arial; font-size:11px; color:#943415; line-height:16px; text-decoration:none; background:url(images/listStyle.jpg) no-repeat 2px 6px}
+#leftPanel .about ul li span span {font-weight: bold;}
+#leftPanel .about ul{margin:8px 0 0 0; padding:0px; float:left; display:block}
+#leftPanel .about ul li{width:auto; margin:0px; padding:0px; float:left; display:block}
