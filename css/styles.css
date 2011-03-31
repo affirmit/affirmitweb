@@ -93,3 +93,7 @@ html body div#mainWrap div#mainPanel div#content h2#about_us {padding-top: 60px;
 #leftPanel .about ul li span span {font-weight: bold;}
 #leftPanel .about ul{margin:8px 0 0 0; padding:0px; float:left; display:block}
 #leftPanel .about ul li{width:auto; margin:0px; padding:0px; float:left; display:block}
+#responseform {display:block; float:left; margin-left:160px; width:600px; margin-top: 150px; font-family:Arial; font-size:12px;  line-height:16px;}
+#responseform label {display: block; font-weight: bold;}
+#responseform input,select,textarea,option { font-family:inherit;font-size: 16px; padding: 5px; border: 1px solid #000; color: #000; }
+#responseform li { margin-left: -25px; list-style-type: none; }
